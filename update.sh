@@ -25,7 +25,10 @@ cp .config.pico .config
 make clean
 make
 
-pause "Press BOOTSEL and re-plug USB for Pico, than ENTER"
+echo "*** Putting Pico into BOOTSEL mode ***"
+sudo stty -F /dev/serial/by-id/usb-Klipper_rp2040_E6609CB2D3243128-if00 1200
+sleep 2
+
 echo "*** Copying firmware ***"
 sudo mount -t vfat /dev/sda1 /mnt/usb
 sudo cp ./out/klipper.uf2 /mnt/usb/
