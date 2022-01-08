@@ -32,7 +32,7 @@ function checkPicotool() {
       echo -e "${RED}Invalid path or picotool binary, install it from https://github.com/raspberrypi/picotool, exiting...${ENDCOLOR}"
       exit 1
    else
-      echo -e "${GREEN}Picotool found, continuing...${ENDCOLOR}"
+      echo -e "${GREEN}Picotool found${ENDCOLOR}"
    fi
    else
       echo -e "${RED}Picotool not found, exiting...${ENDCOLOR}"
@@ -108,20 +108,7 @@ echo "*** Updating Pico ***"
 cp .config.pico .config
 make clean
 make
-
-echo "*** Putting Pico into BOOTSEL mode ***"
-sudo stty -F /dev/ttyACM0 1200
-
-echo waiting
-while [ ! -e /dev/sda1 ]; do sleep 0.1; done
-sleep 0.5
-
-echo "*** Copying firmware ***"
-sudo mount -t vfat /dev/sda1 /mnt/usb
-sleep 1
-sudo cp ./out/klipper.uf2 /mnt/usb/
-sleep 1
-sudo umount /mnt/usb
+make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_rp2040_E6609CB2D3243128-if00
 
 echo "waiting for Pico to come up"
 while [ ! -e "/dev/serial/by-id/usb-Klipper_rp2040_E6609CB2D3243128-if00" ]; do sleep 0.1; done
