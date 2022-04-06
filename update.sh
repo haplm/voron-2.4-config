@@ -101,7 +101,7 @@ cp .config.spider .config
 make clean
 make
 make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_4B0032000250563046353420-if00
-echo "Spider updated, press ENTER to continue with Pico"
+pause "Spider updated, press ENTER to continue with Pico"
 
 #Update Pico
 echo "*** Updating Pico ***"

@@ -1,0 +1,84 @@
+pi@fluiddpi:~ $ sudo uhubctl
+Current status for hub 2 [1d6b:0003 Linux 5.10.103-v7l+ xhci-hcd xHCI Host Controller 0000:01:00.0, USB 3.00, 4 ports, ppps]
+  Port 1: 02a0 power 5gbps Rx.Detect
+  Port 2: 02a0 power 5gbps Rx.Detect
+  Port 3: 02a0 power 5gbps Rx.Detect
+  Port 4: 02a0 power 5gbps Rx.Detect
+Current status for hub 1-1 [2109:3431 USB2.0 Hub, USB 2.10, 4 ports, ppps]
+  Port 1: 0103 power enable connect [1d50:614e Klipper rp2040 E6609CB2D3243128]
+  Port 2: 0100 power
+  Port 3: 0507 power highspeed suspend enable connect [046d:0892 HD Pro Webcam C920 4E1C7DDF]
+  Port 4: 0100 power
+Current status for hub 1 [1d6b:0002 Linux 5.10.103-v7l+ xhci-hcd xHCI Host Controller 0000:01:00.0, USB 2.00, 1 ports, ppps]
+  Port 1: 0503 power highspeed enable connect [2109:3431 USB2.0 Hub, USB 2.10, 4 ports, ppps]
+
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 008: ID 046d:0892 Logitech, Inc. OrbiCam
+Bus 001 Device 014: ID 1d50:614e OpenMoko, Inc. 
+Bus 001 Device 002: ID 2109:3431 VIA Labs, Inc. Hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+2022-03-18 08:32:22 startup archives unpack
+2022-03-18 08:32:23 upgrade libexpat1-dev:armhf 2.2.6-2+deb10u3 2.2.6-2+deb10u4
+2022-03-18 08:32:23 status half-configured libexpat1-dev:armhf 2.2.6-2+deb10u3
+2022-03-18 08:32:23 status unpacked libexpat1-dev:armhf 2.2.6-2+deb10u3
+2022-03-18 08:32:23 status half-installed libexpat1-dev:armhf 2.2.6-2+deb10u3
+2022-03-18 08:32:23 status unpacked libexpat1-dev:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:23 upgrade libexpat1:armhf 2.2.6-2+deb10u3 2.2.6-2+deb10u4
+2022-03-18 08:32:23 status triggers-pending libc-bin:armhf 2.28-10+rpt2+rpi1
+2022-03-18 08:32:23 status half-configured libexpat1:armhf 2.2.6-2+deb10u3
+2022-03-18 08:32:23 status unpacked libexpat1:armhf 2.2.6-2+deb10u3
+2022-03-18 08:32:23 status half-installed libexpat1:armhf 2.2.6-2+deb10u3
+2022-03-18 08:32:23 status unpacked libexpat1:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:23 upgrade libssl-dev:armhf 1.1.1d-0+deb10u7+rpt1 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:23 status half-configured libssl-dev:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:23 status unpacked libssl-dev:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:23 status half-installed libssl-dev:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:24 status unpacked libssl-dev:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:24 upgrade libssl1.1:armhf 1.1.1d-0+deb10u7+rpt1 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:24 status half-configured libssl1.1:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:24 status unpacked libssl1.1:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:24 status half-installed libssl1.1:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:25 status unpacked libssl1.1:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:25 upgrade openssl:armhf 1.1.1d-0+deb10u7+rpt1 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:25 status half-configured openssl:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:25 status unpacked openssl:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:25 status half-installed openssl:armhf 1.1.1d-0+deb10u7+rpt1
+2022-03-18 08:32:25 status triggers-pending man-db:armhf 2.8.5-2
+2022-03-18 08:32:25 status unpacked openssl:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:26 upgrade rpi-eeprom:armhf 13.11-1~buster 13.12-1~buster
+2022-03-18 08:32:26 status half-configured rpi-eeprom:armhf 13.11-1~buster
+2022-03-18 08:32:26 status unpacked rpi-eeprom:armhf 13.11-1~buster
+2022-03-18 08:32:26 status half-installed rpi-eeprom:armhf 13.11-1~buster
+2022-03-18 08:32:28 status unpacked rpi-eeprom:armhf 13.12-1~buster
+2022-03-18 08:32:28 startup packages configure
+2022-03-18 08:32:28 configure libexpat1:armhf 2.2.6-2+deb10u4 <none>
+2022-03-18 08:32:28 status unpacked libexpat1:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:28 status half-configured libexpat1:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:28 status installed libexpat1:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:28 configure libssl1.1:armhf 1.1.1d-0+deb10u8+rpt1 <none>
+2022-03-18 08:32:28 status unpacked libssl1.1:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:28 status half-configured libssl1.1:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:29 status installed libssl1.1:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:29 configure libexpat1-dev:armhf 2.2.6-2+deb10u4 <none>
+2022-03-18 08:32:29 status unpacked libexpat1-dev:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:29 status half-configured libexpat1-dev:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:29 status installed libexpat1-dev:armhf 2.2.6-2+deb10u4
+2022-03-18 08:32:29 configure libssl-dev:armhf 1.1.1d-0+deb10u8+rpt1 <none>
+2022-03-18 08:32:29 status unpacked libssl-dev:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:29 status half-configured libssl-dev:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:29 status installed libssl-dev:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:29 configure rpi-eeprom:armhf 13.12-1~buster <none>
+2022-03-18 08:32:29 status unpacked rpi-eeprom:armhf 13.12-1~buster
+2022-03-18 08:32:29 status half-configured rpi-eeprom:armhf 13.12-1~buster
+2022-03-18 08:32:31 status installed rpi-eeprom:armhf 13.12-1~buster
+2022-03-18 08:32:31 configure openssl:armhf 1.1.1d-0+deb10u8+rpt1 <none>
+2022-03-18 08:32:31 status unpacked openssl:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:31 status half-configured openssl:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:31 status installed openssl:armhf 1.1.1d-0+deb10u8+rpt1
+2022-03-18 08:32:31 trigproc man-db:armhf 2.8.5-2 <none>
+2022-03-18 08:32:31 status half-configured man-db:armhf 2.8.5-2
+2022-03-18 08:32:33 status installed man-db:armhf 2.8.5-2
+2022-03-18 08:32:33 trigproc libc-bin:armhf 2.28-10+rpt2+rpi1 <none>
+2022-03-18 08:32:33 status half-configured libc-bin:armhf 2.28-10+rpt2+rpi1
+2022-03-18 08:32:33 status installed libc-bin:armhf 2.28-10+rpt2+rpi1
